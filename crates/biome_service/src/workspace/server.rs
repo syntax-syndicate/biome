@@ -384,8 +384,8 @@ impl Workspace for WorkspaceServer {
                     }
                 }
 
-                // If the file is not ignored by at least one feature,
-                // then check that the file is not protected.
+                // If the file is not ignored by at least one feature, then check that the file is not protected.
+                //
                 // Protected files must be ignored.
                 if !file_features.is_not_processed() && FileFeaturesResult::is_protected_file(path)
                 {
